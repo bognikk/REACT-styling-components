@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 const Button = styled.button`
 	display: inline-block;
+	width: 100%;
 	padding: 0.8rem 1rem;
 	border: 2px solid #eaba6b;
 	border-radius: 30px;
@@ -11,6 +12,10 @@ const Button = styled.button`
 	text-decoration: none;
 	background-color: #eaba6b;
 	cursor: pointer;
+
+	@media (min-width: 768px) {
+		width: auto;
+	}
 
 	&:hover,
 	&:active,

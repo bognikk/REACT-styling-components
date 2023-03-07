@@ -13,6 +13,10 @@ const FormControl = styled.div`
 	text-align: left;
 	font-weight: 700;
 
+	@media (min-width: 768px) {
+		width: auto;
+	}
+
 	& label {
 		display: block;
 		margin-bottom: 0.5rem;

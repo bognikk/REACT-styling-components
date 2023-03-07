@@ -7,6 +7,27 @@
 	text-align: left;
 	font-weight: 700;
 
+	&.invalid {
+		label {
+			color: salmon;
+		}
+
+		input {
+			border-color: salmon;
+			background-color: salmon;
+
+			&:focus {
+				border-color: salmon;
+				background-color: salmon;
+				outline-color: salmon;
+			}
+
+			&:focus-visible {
+				outline-color: salmon !important;
+			}
+		}
+	}
+
 	label {
 		display: block;
 		margin-bottom: 0.5rem;
